@@ -143,24 +143,26 @@
             Retrouvez toutes les informations du monde associatif !
           </a>
         </h4>
-          <section>
+          <section class="division-section">
             <figure>
               <img src="./images/homepage/image_actu.png" alt="actu">
-              <figcaption>
-                C'est l'une des mesures majeures de la loi dite
-                "séparatisme" d'août 2021 :
-              </figcaption>
             </figure>
-            <p class="actu-homepage">
-              Les associations bénéficiant de subventions
-              publiques doivent respecter un Contrat
-              d'Engagement Républicain. Des voix s'élèvent pour
-              dénoncer une instrumentalisation politique du
-              monde associatif.
-            </p>
-            <button type="button" class="button bouton-bleu is-small">
-              En savoir plus
-            </button>
+            <section>
+              <p class="titre">
+                C'est l'une des mesures majeures de la loi dite
+                "séparatisme" d'août 2021
+              </p>
+              <p class="actu-homepage">
+                Les associations bénéficiant de subventions
+                publiques doivent respecter un Contrat
+                d'Engagement Républicain. Des voix s'élèvent pour
+                dénoncer une instrumentalisation politique du
+                monde associatif.
+              </p>
+              <button type="button" class="button bouton-bleu is-small">
+                En savoir plus
+              </button>
+            </section>
           </section>
       </aside>
 

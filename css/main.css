@@ -59,6 +59,11 @@ h2, h5, h6{
     margin: .3rem;
 }
 
+.bouton-bleu:hover, .bouton-blanc:hover{
+    background-color: var(--bleu-clair);
+    color: var(--blanc);
+}
+
 .fond-bleu{
     background-color: var(--bleu-fonce);
     color: var(--blanc);
@@ -96,6 +101,10 @@ a{
 
 strong{
     color: var(--blanc);
+}
+
+.gauche{
+    float: left;
 }
 
 @media screen and (min-width: 64rem) {

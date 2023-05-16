@@ -220,11 +220,17 @@ figcaption{
 
     main aside section figure{
         display: flex;
+        margin-left: 7rem;
     }
 
-    main aside section figure img, main aside section figcaption{
-        max-width: 50%;
-        margin: 3rem;
+    .division-section{
+        display: flex;
+        align-items: center;
+    }
+
+    .actu-homepage{
+        margin: 0 10rem;
+        padding-bottom: 3rem;
     }
 
 }
