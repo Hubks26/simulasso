@@ -9,12 +9,10 @@
 
     <title>Bienvenue - Simul'asso</title>
 
-    <!-- pas d'utilité ici
     <link rel="icon" href="/favicon.ico">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
-    -->
 
     <!-- framework css - Bulma -->
     <link rel="stylesheet" href="css/bulma.min.css?v=0.9.3">
@@ -27,9 +25,52 @@
   <body>
   <!-- HEADER -->
     <header>
-      <?php
-      include ('pages_fixes/header-libre.php');
-      ?>
+      <section>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <aside class="petit fond-bleu">
+              Commencer à créer votre association, gratuitement et rapidement ! <button type="button" class="button bouton-blanc is-small">Inscription</button>
+            </aside>
+          </div>
+          <div class="navbar-brand">
+            <a class="navbar-item" href="./index.php">
+              <figure>
+                <a href="./index.php"><img src="./images/logos/logo_bleu_fond_blanc.png" width="112" height="28" alt="Simulasso"></a>
+              </figure>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="./libre/services.php">
+                  Nos services
+                </a>
+
+                <a class="navbar-item">
+                  Les actualités
+                </a>
+
+                <a class="navbar-item">
+                  Nous découvrir
+                </a>
+
+                <a class="navbar-item">
+                  Nous contacter
+                </a>
+
+                <a class="navbar-item fond-bleu">
+                  Connexion
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
     </header>
 
     <!-- MAIN -->
@@ -199,9 +240,106 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <?php
-          include ('pages_fixes/footer.php');
-        ?>
+      <div class="columns">
+        <!-- Column 1 -->
+        <div class="column">
+
+          <figure>
+            <img src="./images/logos/logo_bleu_fond_blanc.png" alt="simulasso">
+          </figure>
+
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column">
+          <h4 class="bd-footer-title
+                 has-text-weight-medium
+                 has-text-justify">
+            Nous suivre
+          </h4>
+
+          <p class="bd-footer-link">
+            <a href="https://">
+                <span class="icon-text">
+                  <img src="./images/footer/facebook_logo.png" alt="facebook" width="40">
+                </span>
+            </a>
+            <a href="https://">
+                <span class="icon-text">
+                  <img src="./images/footer/instagram_logo.png" alt="instagram" width="40">
+                </span>
+            </a>
+            <a href="https://">
+                <span class="icon-text">
+                  <img src="./images/footer/linkedin_logo.png" alt="linkedin" width="40">
+                </span>
+            </a>
+            <a href="https://">
+                <span class="icon-text">
+                  <img src="./images/footer/tiktok_logo.png" alt="tiktok" width="40">
+                </span>
+            </a>
+            <a href="https://">
+                <span class="icon-text">
+                  <img src="./images/footer/twitter_logo.png" alt="twitter" width="40">
+                </span>
+            </a>
+            <a href="https://">
+                <span class="icon-text">
+                  <img src="./images/footer/youtube_logo.png" alt="youtube" width="40">
+                </span>
+            </a>
+            <br />
+          </p>
+
+        </div>
+
+        <!-- Column 3 -->
+        <div class="column">
+          <h4 class="bd-footer-title
+                 has-text-weight-medium
+                 has-text-justify">
+            Informations légales
+          </h4>
+
+          <p class="bd-footer-link">
+            <a href="https://">
+              <span class="icon-text">
+                <span>Mentions légales</span>
+              </span>
+            </a>
+            <br />
+            <a href="https://">
+              <span class="icon-text">
+                <span>Confidentialité</span>
+              </span>
+            </a>
+          </p>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="column">
+          <h4 class="bd-footer-title
+                 has-text-weight-medium
+                 has-text-justify">
+            Aide
+          </h4>
+
+          <p class="bd-footer-link">
+            <a href="https://">
+              <span class="icon-text">
+                <span>Formulaire de contact</span>
+              </span>
+            </a>
+            <br />
+            <a href="https://">
+              <span class="icon-text">
+                <span>Chatbot</span>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
     </footer>
     <aside class="is-fixed-bottom fond-bleu has-text-centered petit">
       © Pic'asso 2023 - Tous droits réservés

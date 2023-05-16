@@ -9,9 +9,9 @@ echo '
             </aside>
         </div>
         <div class="navbar-brand">
-            <a class="navbar-item" href="index.php">
+            <a class="navbar-item" href="./../index.php">
                 <figure>
-                    <a href="index.php"><img src="images/logos/logo_bleu_fond_blanc.png" width="112" height="28" alt="Simulasso"></a>
+                    <a href="./../index.php"><img src="./../images/logos/logo_bleu_fond_blanc.png" width="112" height="28" alt="Simulasso"></a>
                 </figure>
             </a>
 
@@ -23,7 +23,7 @@ echo '
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="libre/services.php">
+                    <a class="navbar-item" href="./../libre/services.php">
                         Nos services
                     </a>
 

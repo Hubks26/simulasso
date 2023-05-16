@@ -6,7 +6,7 @@ echo '
           <div class="column">
 
             <figure>
-              <img src="images/logos/logo_bleu_fond_blanc.png" alt="simulasso">
+              <img src="./../images/logos/logo_bleu_fond_blanc.png" alt="simulasso">
             </figure>
 
           </div>
@@ -22,32 +22,32 @@ echo '
             <p class="bd-footer-link">
               <a href="https://">
                 <span class="icon-text">
-                  <img src="images/footer/facebook_logo.png" alt="facebook" width="40">
+                  <img src="./../images/footer/facebook_logo.png" alt="facebook" width="40">
                 </span>
               </a>
               <a href="https://">
                 <span class="icon-text">
-                  <img src="images/footer/instagram_logo.png" alt="instagram" width="40">
+                  <img src="./../images/footer/instagram_logo.png" alt="instagram" width="40">
                 </span>
               </a>
               <a href="https://">
                 <span class="icon-text">
-                  <img src="images/footer/linkedin_logo.png" alt="linkedin" width="40">
+                  <img src="./../images/footer/linkedin_logo.png" alt="linkedin" width="40">
                 </span>
               </a>
               <a href="https://">
                 <span class="icon-text">
-                  <img src="images/footer/tiktok_logo.png" alt="tiktok" width="40">
+                  <img src="./../images/footer/tiktok_logo.png" alt="tiktok" width="40">
                 </span>
               </a>
               <a href="https://">
                 <span class="icon-text">
-                  <img src="images/footer/twitter_logo.png" alt="twitter" width="40">
+                  <img src="./../images/footer/twitter_logo.png" alt="twitter" width="40">
                 </span>
               </a>
               <a href="https://">
                 <span class="icon-text">
-                  <img src="images/footer/youtube_logo.png" alt="youtube" width="40">
+                  <img src="./../images/footer/youtube_logo.png" alt="youtube" width="40">
                 </span>
               </a>
               <br />

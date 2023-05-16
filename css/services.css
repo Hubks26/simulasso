@@ -1,0 +1,8 @@
+.majuscule{
+    text-transform: uppercase;
+}
+
+.liste-ignore{
+    list-style: initial;
+    margin: .5rem 2rem;
+}

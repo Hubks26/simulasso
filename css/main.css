@@ -3,6 +3,7 @@
 @import url('navbar.css');
 @import url('footer.css');
 @import url('homepage-content.css');
+@import url('services.css');
 
 body{
     font-size: 16px; /*definition de la taille de base*/
@@ -41,22 +42,26 @@ h2, h5, h6{
     border: none;
 }
 
-.bouton-blanc{
-    background-color: var(--blanc);
-    color: var(--bleu-fonce);
+.bouton-blanc, .bouton-orange, .bouton-bleu{
     border: none;
     border-radius: 5px;
     padding: .4rem .5rem;
     margin: .3rem;
 }
 
+.bouton-blanc{
+    background-color: var(--blanc);
+    color: var(--bleu-fonce);
+}
+
 .bouton-bleu{
     background-color: var(--bleu-fonce);
     color: var(--blanc);
-    border: none;
-    border-radius: 5px;
-    padding: .4rem .5rem;
-    margin: .3rem;
+}
+
+.bouton-orange{
+    background-color: var(--orange);
+    color: var(--blanc);
 }
 
 .bouton-bleu:hover, .bouton-blanc:hover{
@@ -71,6 +76,11 @@ h2, h5, h6{
 
 .fond-orange{
     background-color: var(--orange);
+    color: var(--blanc);
+}
+
+.fond-bleu-clair{
+    background-color: var(--bleu-clair);
     color: var(--blanc);
 }
 
