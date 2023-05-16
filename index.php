@@ -170,7 +170,7 @@
           rien, mais parce qu’il n’a pas de prix.”
         </p>
         <p class="titre">
-          <strong>Sherry Anderson</strong>
+          <strong class="texte-bleu">Sherry Anderson</strong>
         </p>
       </aside>
 
@@ -181,11 +181,11 @@
         <p class="actu-homepage">
           <strong class="texte-blanc">Vous avez un projet associatif en tête et vous cherchez un accompagnement sur mesure pour le réaliser ? Vous
             êtes au bon endroit !</strong><br>
-          En créant un compte sur notre site, vous aurez accès à des outils performants et intuitifs pour vous aider à mener à bien
-          votre projet associatif. Grâce à notre expertise et à notre expérience, nous sommes en mesure de vous accompagner
-          dans toutes les étapes de la création et de la gestion de votre association, de la rédaction des statuts à la gestion
+          En créant un compte sur notre site, vous aurez accès à des <strong>outils performants et intuitifs</strong> pour vous aider à mener à bien
+          votre projet associatif. Grâce à notre expertise et à notre expérience, nous sommes en mesure de <strong>vous accompagner
+            dans toutes les étapes de la création et de la gestion de votre association</strong>, de la rédaction des statuts à la gestion
           administrative, en passant par la recherche de financements et la communication.<br>
-          Alors n'hésitez plus et créez votre compte dès maintenant ! Rejoignez notre communauté dynamique d'associations
+          Alors n'hésitez plus et créez votre compte dès maintenant ! Rejoignez notre <strong>communauté dynamique</strong> d'associations
           engagées et bénéficiez d'un accompagnement sur mesure pour réaliser vos projets associatifs. Nous avons hâte de vous
           aider à concrétiser vos idées et à faire avancer vos projets !
         </p>

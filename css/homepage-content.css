@@ -200,17 +200,13 @@ figcaption{
     font-size: small;
 }
 
-.lien-blanc, .texte-blanc{
-    color: var(--blanc);
-}
-
-.citation, strong{
+.citation{
     color: var(--bleu-fonce);
 }
 
 @media screen and (min-width: 64rem) {
 
-    main article::before {
+    main > article:first-child::before{
         content: ' ';
         position: absolute;
         z-index: -1;
