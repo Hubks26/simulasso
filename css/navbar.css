@@ -1,0 +1,13 @@
+nav > div > aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 64rem) {
+
+    header section nav aside{
+        display: none;
+    }
+
+}

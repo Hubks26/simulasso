@@ -1,0 +1,12 @@
+.footer{
+    padding: 3rem 1.5rem;
+    background-color: var(--blanc);
+}
+
+.footer a{
+    color: var(--bleu-fonce);
+}
+
+.footer h4{
+    font-family: texte;
+}

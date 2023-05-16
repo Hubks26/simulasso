@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'titre';
+    src: url('../fonts/babydoll/baby_doll-webfont.woff2') format('woff2'),
+        url('../fonts/babydoll/baby_doll-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'texte';
+    src: url('../fonts/avenir/avenirltstd-book-webfont.woff2') format('woff2'),
+    url('../fonts/avenir/avenirltstd-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
