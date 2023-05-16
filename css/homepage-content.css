@@ -1,8 +1,8 @@
-main > article {
+main > article{
     position: relative;
 }
 
-main > article::before {
+main > article:first-child::before {
     content: ' ';
     position: absolute;
     z-index: -1;

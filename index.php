@@ -35,7 +35,7 @@
     <!-- MAIN -->
     <main>
       <article>
-        <section class="section section1 has-text-centered">
+        <section class="section section1 has-text-centered" id="fond-photo">
           <h2>
             Simul'asso, plus qu'un simple outil,
           </h2>
@@ -170,7 +170,7 @@
           rien, mais parce qu’il n’a pas de prix.”
         </p>
         <p class="titre">
-          <strong>Sherry Anderson.</strong>
+          <strong>Sherry Anderson</strong>
         </p>
       </aside>
 
