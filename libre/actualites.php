@@ -38,22 +38,11 @@
         <article>
             <section class="section section1 has-text-centered" id="fond-photo">
                 <h2>
-                    Simul'asso, plus qu'un simple outil,
+                    Simul'asso reste informé pour vous
                 </h2>
                 <h1>
-                    une aide à la création d'association
+                    Découvrez l'actualité du monde associatif
                 </h1>
-                <button type="button" class="button bouton-bleu">Je m'inscris</button>
-            </section>
-
-            <section class="section fond-bleu has-text-centered">
-                <p>
-                    Créer une association peut sembler intimidant, mais <strong>Simul'asso</strong> est là pour vous
-                    accompagner tout au long du processus. Nous vous offrons des <strong>conseils pratiques</strong>, des <strong>outils</strong>, des
-                    <strong>ressources</strong> pour vous aider à élaborer des statuts, à vous enregistrer et à gérer votre association
-                    de manière efficace.
-                </p>
-                <button type="button" class="button bouton-blanc">Créer mon association</button>
             </section>
 
             <section class="section fond-blanc has-text-centered">
