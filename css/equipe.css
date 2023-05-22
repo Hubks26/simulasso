@@ -1,0 +1,16 @@
+.card{
+    margin: .5rem;
+}
+
+.fond-equipe{
+    background: none;
+}
+
+@media screen and (min-width: 64rem) {
+
+    .fond-equipe{
+        background: url("./../images/equipe/equipe.png") no-repeat;
+        background-size: cover;
+    }
+
+}
