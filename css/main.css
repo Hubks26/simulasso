@@ -84,6 +84,11 @@ h2, h5, h6{
     color: var(--blanc);
 }
 
+.fond-blanc{
+    background-color: var(--blanc);
+    color: var(--bleu-fonce);
+}
+
 .petit{
     font-size: .7rem;
 }

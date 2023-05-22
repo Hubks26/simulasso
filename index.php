@@ -54,15 +54,15 @@
                   Nos services
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="./libre/actualites.php">
                   Les actualités
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="./libre/notre-equipe.php">
                   Nous découvrir
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="./libre/contact.php">
                   Nous contacter
                 </a>
 
