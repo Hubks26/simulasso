@@ -45,7 +45,7 @@
             </h1>
         </section>
 
-        <form action="./../traitements/tt-contact.php" method="post">
+        <form action="./../traitements/tt-contact.php" method="post" class="box">
             <div class="field">
                 <label class="label">Votre nom</label>
                 <div class="control">

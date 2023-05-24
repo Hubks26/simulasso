@@ -39,7 +39,7 @@ echo '
                         Nous contacter
                     </a>
 
-                    <a class="navbar-item fond-bleu">
+                    <a class="navbar-item fond-bleu-clair" href="./../libre/connexion.php">
                         Connexion
                     </a>
                 </div>
