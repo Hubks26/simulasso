@@ -61,7 +61,7 @@
                     <strong class="texte-bleu">Rejoignez-nous dès maintenant et lancez-vous dans l'aventure associative de vos rêves grâce à
                         Simul'asso !</strong>
                 </p>
-                <button type="button" class="button bouton-bleu">Je m'inscris</button>
+                <a type="button" class="button bouton-bleu" href="./../libre/inscription.php">Je m'inscris</a>
             </section>
             <section class="section fond-blanc has-text-centered">
                 <div class="columns">

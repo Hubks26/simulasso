@@ -86,7 +86,7 @@
           <h1>
             une aide à la création d'association
           </h1>
-          <button type="button" class="button bouton-bleu">Je m'inscris</button>
+          <a class="button bouton-bleu" href="./libre/inscription.php">Je m'inscris</a>
         </section>
 
         <section class="section columns fond-bleu has-text-centered">
@@ -99,7 +99,7 @@
               association ? Simul'asso est la solution !
               Nous vous épaulons dans votre nouvelle aventure...
             </p>
-            <button type="button" class="button bouton-blanc is-small">Mieux connaître Simul'Asso</button>
+            <a class="button bouton-blanc is-small" href="./libre/services.php">Mieux connaître Simul'Asso</a>
           </div>
 
           <div class="column">
@@ -111,7 +111,7 @@
               de votre association, depuis l'élaboration des statuts
               jusqu'à l'enregistrement auprès de la préfecture.
             </p>
-            <button type="button" class="button bouton-blanc is-small">Je souhaite créer mon association</button>
+            <a class="button bouton-blanc is-small" href="./libre/inscription.php">Je souhaite créer mon association</a>
           </div>
 
           <div class="column">
@@ -123,7 +123,7 @@
               Si vous avez un doute ou une inquiétude, nos conseillers sont là pour
               vous répondre !
             </p>
-            <button type="button" class="button bouton-blanc is-small">Contacter Simul'asso</button>
+            <a class="button bouton-blanc is-small" href="./libre/contact.php">Contacter Simul'asso</a>
           </div>
 
           <div class="column">
@@ -134,17 +134,18 @@
               Nous mettons à votre disposition toute l’actualité
               concernant les associations, n’hésitez pas à y jeter un coup d’œil !
             </p>
-            <button type="button" class="button bouton-blanc is-small">Voir les actualités</button>
+            <a class="button bouton-blanc is-small" href="./libre/actualites.php">Voir les actualités</a>
           </div>
         </section>
       </article>
 
 
-      <!-- https://codepen.io/Nalid/details/abdaqvR -->
+
 
 
 
       <aside>
+        <!-- https://codepen.io/Nalid/details/abdaqvR -->
         <section class="section">
           <div class="wrapper">
             <div data-carousel>
@@ -183,7 +184,7 @@
 
       <aside class="section fond-orange has-text-centered">
         <h4>
-          <a href="#" class="lien-blanc titre">
+          <a href="./libre/actualites.php" class="lien-blanc titre">
             Retrouvez toutes les informations du monde associatif !
           </a>
         </h4>
@@ -203,9 +204,9 @@
                 dénoncer une instrumentalisation politique du
                 monde associatif.
               </p>
-              <button type="button" class="button bouton-bleu is-small">
+              <a class="button bouton-bleu is-small" href="https://www.vie-publique.fr/loi/277621-loi-separatisme-respect-des-principes-de-la-republique-24-aout-2021">
                 En savoir plus
-              </button>
+              </a>
             </section>
           </section>
       </aside>
@@ -235,9 +236,9 @@
           engagées et bénéficiez d'un accompagnement sur mesure pour réaliser vos projets associatifs. Nous avons hâte de vous
           aider à concrétiser vos idées et à faire avancer vos projets !
         </p>
-        <button type="button" class="button is-small bouton-blanc">
+        <a class="button is-small bouton-blanc" href="./libre/inscription.php">
           Je souhaite m'inscrire
-        </button>
+        </a>
       </article>
     </main>
 
@@ -248,7 +249,9 @@
         <div class="column">
 
           <figure>
-            <img src="./images/logos/logo_bleu_fond_blanc.png" alt="simulasso">
+              <a href="./index.php">
+                  <img src="./images/logos/logo_bleu_fond_blanc.png" alt="simulasso">
+              </a>
           </figure>
 
         </div>
@@ -262,32 +265,32 @@
           </h4>
 
           <p class="bd-footer-link">
-            <a href="https://">
+            <a href="#">
                 <span class="icon-text">
                   <img src="./images/footer/facebook_logo.png" alt="facebook" width="40">
                 </span>
             </a>
-            <a href="https://">
+            <a href="#">
                 <span class="icon-text">
                   <img src="./images/footer/instagram_logo.png" alt="instagram" width="40">
                 </span>
             </a>
-            <a href="https://">
+            <a href="#">
                 <span class="icon-text">
                   <img src="./images/footer/linkedin_logo.png" alt="linkedin" width="40">
                 </span>
             </a>
-            <a href="https://">
+            <a href="#">
                 <span class="icon-text">
                   <img src="./images/footer/tiktok_logo.png" alt="tiktok" width="40">
                 </span>
             </a>
-            <a href="https://">
+            <a href="#">
                 <span class="icon-text">
                   <img src="./images/footer/twitter_logo.png" alt="twitter" width="40">
                 </span>
             </a>
-            <a href="https://">
+            <a href="#">
                 <span class="icon-text">
                   <img src="./images/footer/youtube_logo.png" alt="youtube" width="40">
                 </span>
@@ -312,9 +315,9 @@
               </span>
             </a>
             <br />
-            <a href="https://">
+            <a href="./documents/conditions-generales-simulasso.pdf" download="./documents/conditions-generales-simulasso.pdf">
               <span class="icon-text">
-                <span>Confidentialité</span>
+                <span>CGU</span>
               </span>
             </a>
           </p>
@@ -329,13 +332,13 @@
           </h4>
 
           <p class="bd-footer-link">
-            <a href="https://">
+            <a href="./libre/contact.php">
               <span class="icon-text">
                 <span>Formulaire de contact</span>
               </span>
             </a>
             <br />
-            <a href="https://">
+            <a href="#">
               <span class="icon-text">
                 <span>Chatbot</span>
               </span>

@@ -38,12 +38,11 @@
         <article>
             <section class="section section1 has-text-centered" id="fond-photo">
                 <h2>
-                    Simul'asso, plus qu'un simple outil,
+                    Simul'asso, c'est quoi ?
                 </h2>
                 <h1>
-                    une aide à la création d'association
+                    nos services
                 </h1>
-                <button type="button" class="button bouton-bleu">Je m'inscris</button>
             </section>
 
             <section class="section fond-bleu has-text-centered">
@@ -53,7 +52,7 @@
                     <strong>ressources</strong> pour vous aider à élaborer des statuts, à vous enregistrer et à gérer votre association
                     de manière efficace.
                 </p>
-                <button type="button" class="button bouton-blanc">Créer mon association</button>
+                <a type="button" class="button bouton-blanc" href="./../libre/inscription.php">Créer mon association</a>
             </section>
 
             <section class="section columns fond-orange has-text-centered">

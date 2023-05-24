@@ -20,32 +20,32 @@ echo '
             </h4>
 
             <p class="bd-footer-link">
-              <a href="https://">
+              <a href="#">
                 <span class="icon-text">
                   <img src="./../images/footer/facebook_logo.png" alt="facebook" width="40">
                 </span>
               </a>
-              <a href="https://">
+              <a href="#">
                 <span class="icon-text">
                   <img src="./../images/footer/instagram_logo.png" alt="instagram" width="40">
                 </span>
               </a>
-              <a href="https://">
+              <a href="#">
                 <span class="icon-text">
                   <img src="./../images/footer/linkedin_logo.png" alt="linkedin" width="40">
                 </span>
               </a>
-              <a href="https://">
+              <a href="#">
                 <span class="icon-text">
                   <img src="./../images/footer/tiktok_logo.png" alt="tiktok" width="40">
                 </span>
               </a>
-              <a href="https://">
+              <a href="#">
                 <span class="icon-text">
                   <img src="./../images/footer/twitter_logo.png" alt="twitter" width="40">
                 </span>
               </a>
-              <a href="https://">
+              <a href="#">
                 <span class="icon-text">
                   <img src="./../images/footer/youtube_logo.png" alt="youtube" width="40">
                 </span>
@@ -70,9 +70,9 @@ Informations légales
               </span>
               </a>
               <br />
-              <a href="https://">
+              <a href="./../documents/conditions-generales-simulasso.pdf" download="./../documents/conditions-generales-simulasso.pdf">
               <span class="icon-text">
-                <span>Confidentialité</span>
+                <span>CGU</span>
               </span>
               </a>
             </p>
@@ -87,13 +87,13 @@ Aide
             </h4>
 
             <p class="bd-footer-link">
-              <a href="https://">
+              <a href="./../libre/contact.php">
               <span class="icon-text">
                 <span>Formulaire de contact</span>
               </span>
               </a>
               <br />
-              <a href="https://">
+              <a href="#">
               <span class="icon-text">
                 <span>Chatbot</span>
               </span>
