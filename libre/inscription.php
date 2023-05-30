@@ -98,7 +98,7 @@
                 <div class="control">
                     <label class="checkbox">
                         <input type="checkbox">
-                        J'accepte les <a href="#">conditions d'utilisation</a>
+                        J'accepte les <a href="./../documents/conditions-generales-simulasso.pdf">conditions d'utilisation</a>
                     </label>
                 </div>
             </div>
