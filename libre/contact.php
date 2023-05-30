@@ -24,6 +24,13 @@
         <!-- on appelle d'abord la feuille de style bulma avant la notre car les lignes sont exécutées les unes
         après les autres et on veut que ce soit notre feuille qui prime -->
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script type="text/javascript">
+            function validate() {
+                if (!document.getElementById('accept-conditions').checked) {
+                    alert("Vous devez accepter les conditions pour continuer");
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -50,7 +57,7 @@
                 <label class="label">Votre nom</label>
                 <div class="control">
                     <label>
-                        <input class="input" type="text" placeholder="Nom">
+                        <input class="input" type="text" placeholder="Nom" name="nom" required>
                     </label>
                 </div>
             </div>
@@ -59,7 +66,7 @@
                 <label class="label">Votre prénom</label>
                 <div class="control">
                     <label>
-                        <input class="input" type="text" placeholder="Prénom">
+                        <input class="input" type="text" placeholder="Prénom" name="prenom" required>
                     </label>
                 </div>
             </div>
@@ -68,7 +75,7 @@
                 <label class="label">Votre adresse mail</label>
                 <div class="control has-icons-left">
                     <label>
-                        <input class="input" type="email" placeholder="Email">
+                        <input class="input" type="email" placeholder="Email" name="mail" required>
                     </label>
                     <span class="icon is-small is-left">
                       <i class="fas fa-envelope"></i>
@@ -80,7 +87,7 @@
                 <label class="label">Sujet</label>
                 <div class="control">
                     <label>
-                        <input class="input" type="text" placeholder="Sujet">
+                        <input class="input" type="text" placeholder="Sujet" name="objet" required>
                     </label>
                 </div>
             </div>
@@ -89,7 +96,7 @@
                 <label class="label">Message</label>
                 <div class="control">
                     <label>
-                        <textarea class="textarea" placeholder="Textarea"></textarea>
+                        <textarea class="textarea" placeholder="Contenu de votre message" name="contenu"></textarea>
                     </label>
                 </div>
             </div>
@@ -97,15 +104,15 @@
             <div class="field">
                 <div class="control">
                     <label class="checkbox">
-                        <input type="checkbox">
-                        J'accepte les <a href="#">conditions d'utilisation</a>
+                        <input type="checkbox" id="accept-conditions">
+                        J'accepte les <a href="./../documents/conditions-generales-simulasso.pdf">conditions d'utilisation</a>
                     </label>
                 </div>
             </div>
 
             <div class="field">
                 <div class="control">
-                    <button class="button is-link">Envoyer</button>
+                    <button class="button is-link" onclick="validate()">Envoyer</button>
                 </div>
             </div>
         </form>
