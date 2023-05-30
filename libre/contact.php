@@ -24,13 +24,7 @@
         <!-- on appelle d'abord la feuille de style bulma avant la notre car les lignes sont exécutées les unes
         après les autres et on veut que ce soit notre feuille qui prime -->
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-        <script type="text/javascript">
-            function validate() {
-                if (!document.getElementById('accept-conditions').checked) {
-                    alert("Vous devez accepter les conditions pour continuer");
-                }
-            }
-        </script>
+        <script src="./../javascript/validation-conditions.js"></script>
     </head>
 
     <body>
@@ -105,7 +99,7 @@
                 <div class="control">
                     <label class="checkbox">
                         <input type="checkbox" id="accept-conditions">
-                        J'accepte les <a href="./../documents/conditions-generales-simulasso.pdf">conditions d'utilisation</a>
+                        J'accepte les <a href="./../documents/conditions-generales-simulasso.pdf" target="_blank">conditions d'utilisation</a>
                     </label>
                 </div>
             </div>

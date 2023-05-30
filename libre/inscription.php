@@ -24,6 +24,8 @@
         <!-- on appelle d'abord la feuille de style bulma avant la notre car les lignes sont exécutées les unes
         après les autres et on veut que ce soit notre feuille qui prime -->
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="./../javascript/validation-conditions.js"></script>
+
     </head>
 
     <body>
@@ -50,7 +52,7 @@
                 <label class="label">Votre nom</label>
                 <div class="control">
                     <label>
-                        <input class="input" type="text" placeholder="Nom">
+                        <input class="input" type="text" placeholder="Nom" name="nom" required>
                     </label>
                 </div>
             </div>
@@ -59,7 +61,7 @@
                 <label class="label">Votre prénom</label>
                 <div class="control">
                     <label>
-                        <input class="input" type="text" placeholder="Prénom">
+                        <input class="input" type="text" placeholder="Prénom" name="prenom" required>
                     </label>
                 </div>
             </div>
@@ -68,7 +70,7 @@
                 <label class="label">Votre adresse mail</label>
                 <div class="control has-icons-left">
                     <label>
-                        <input class="input" type="email" placeholder="Email">
+                        <input class="input" type="email" placeholder="Email" name="mail" required>
                     </label>
                     <span class="icon is-small is-left">
                           <i class="fas fa-envelope"></i>
@@ -80,7 +82,7 @@
                 <label class="label">Mot de passe</label>
                 <div class="control has-icons-right">
                     <label>
-                        <input class="input" type="password" placeholder="Mot de passe">
+                        <input class="input" type="password" placeholder="Mot de passe" name="mdp" required>
                     </label>
                 </div>
             </div>
@@ -89,7 +91,7 @@
                 <label class="label">Confirmer le mot de passe</label>
                 <div class="control has-icons-right">
                     <label>
-                        <input class="input" type="password" placeholder="Confirmer le mot de passe"></input>
+                        <input class="input" type="password" placeholder="Confirmer le mot de passe" required></input>
                     </label>
                 </div>
             </div>
@@ -97,15 +99,15 @@
             <div class="field">
                 <div class="control">
                     <label class="checkbox">
-                        <input type="checkbox">
-                        J'accepte les <a href="./../documents/conditions-generales-simulasso.pdf">conditions d'utilisation</a>
+                        <input type="checkbox" id="accept-conditions">
+                        J'accepte les <a href="./../documents/conditions-generales-simulasso.pdf" target="_blank">conditions d'utilisation</a>
                     </label>
                 </div>
             </div>
 
             <div class="field is-grouped-centered is-grouped">
                 <div class="control">
-                    <button class="button is-link" type="submit">M'inscrire</button>
+                    <button class="button is-link" type="submit" onclick="validate()">M'inscrire</button>
                     <a href="connexion.php" class="button">J'ai déjà un compte</a>
                 </div>
             </div>
