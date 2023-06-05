@@ -1,3 +1,29 @@
 .petite-image{
     width: 30%;
 }
+
+.barre-a-gauche{
+    float: left;
+    width: 22%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.barre-a-gauche img{
+    width: 30%;
+    border-radius: 15px;
+    padding: .3rem;
+}
+
+.liste{
+    list-style: circle;
+}
+
+.input-assoc{
+    width: 50%;
+}
+
+.a-droite{
+    margin-left: 26%;
+}

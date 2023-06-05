@@ -71,7 +71,7 @@
         </section>
 
         <section class="section has-text-centered fond-bleu">
-            <a href="./etape1/etape1-1.php">
+            <a href="etape1-1.php">
                 <button class="button bouton-blanc">Démarrer la création</button>
             </a>
         </section>

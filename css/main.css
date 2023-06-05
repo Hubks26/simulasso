@@ -128,6 +128,11 @@ form{
     margin: 3rem;
 }
 
+.hover-blanc:hover{
+    color: var(--bleu-fonce);
+    background-color: var(--blanc);
+}
+
 @media screen and (min-width: 64rem) {
 
     html.has-navbar-fixed-top{
