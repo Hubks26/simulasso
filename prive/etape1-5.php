@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="../javascript/menu.js"></script>
 
-        <title>Etape 1-4 - Simul'asso</title>
+        <title>Etape 1-5 - Simul'asso</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -41,21 +41,23 @@
     <main class="fond-bleu-clair">
 
         <section class="section has-text-centered">
-            <h1>Qui effectue les démarches de création ?</h1>
+            <h1>Convocation pour l'assemblée générale constitutive</h1>
         </section>
 
         <section class="section">
-            <form method="post" action="./../traitements/etape1/tt-etape1-4.php">
-                <input type="text" placeholder="Nom" class="input input-assoc"
-                       name="nom-demandeur" required>
+            <p>
+                Nous allons générer pour vous une convocation afin de réunir les membres de votre équipe pour
+                l’assemblée générale consécutive. Afin d’être le plus précis possible, veuillez remplir les
+                informations suivantes.
+            </p>
+            <form method="post" action="./../traitements/etape1/tt-etape1-5.php">
+                <input type="date" class="input input-assoc" name="date-assemble-const" id="datepicker" required>
                 <br><br>
-                <input type="text" placeholder="Prénom" class="input input-assoc"
-                       name="prenom-demandeur" required>
-                <br>
-                <br>
+                <input type="time" class="input input-assoc" name="heure-assemble-const" required>
+                <br><br>
 
                 <input type="text" class="input-assoc input" id="adresse" placeholder="Adresse"
-                name="adresse-demandeur" required>
+                       name="adresse-demandeur" required>
 
                 <br>
                 <br>
@@ -76,4 +78,22 @@
         © Pic'asso 2023 - Tous droits réservés
     </aside>
     </body>
+
+    <script type="text/javascript">
+        let today = new Date();
+        let dd = today.getDate();
+        let mm = today.getMonth() + 1;
+        let yyyy = today.getFullYear();
+
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("datepicker").setAttribute("min", today);
+    </script>
 </html>
