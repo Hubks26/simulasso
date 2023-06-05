@@ -2,7 +2,6 @@
 
 $nomassociation = $_POST["nom-association"];
 
-var_dump($nomassociation);
 
 $filename = './../../documents/assemblee1.csv';
 
