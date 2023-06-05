@@ -2,4 +2,4 @@
 
 $nomassociation = $_POST["nom-association"];
 
-header('Location: ./../../prive/resume-etape-1.php');
+header('Location: ./../../prive/etape1-4.php');
