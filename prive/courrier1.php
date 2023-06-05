@@ -40,16 +40,16 @@
     <div class="sous-titre">Heure: 18h00</div>
     <div class="sous-titre">Lieu: Salle de réunion XYZ</div>
     <div class="paragraphe">Chers membres de l'association,</div>
-    <div class="paragraphe">Nous vous convions à participer à l'assemblée générale constitutive</div>
-    <div class="paragraphe">de notre association qui se tiendra le 5 juin 2023 à 18h00</div>
-    <div class="paragraphe">dans la salle de réunion XYZ.</div>
+    <div class="paragraphe">Nous vous convions à participer à l'assemblée générale constitutive
+        de notre association qui se tiendra le 5 juin 2023 à 18h00
+        dans la salle de réunion XYZ.</div>
     <div class="sous-titre">Ordre du jour:</div>
     <div class="paragraphe">1. Présentation du projet associatif</div>
     <div class="paragraphe">2. Adoption des statuts</div>
     <div class="paragraphe">3. Élection du bureau</div>
     <div class="paragraphe">4. Questions diverses</div>
-    <div class="paragraphe">Nous comptons sur votre présence et votre engagement</div>
-    <div class="paragraphe">pour contribuer à la réussite de notre association.</div>
+    <div class="paragraphe">Nous comptons sur votre présence et votre engagement
+        pour contribuer à la réussite de notre association.</div>
     <div class="signature">Cordialement,</div>
     <div class="signature">Le président de l'association</div>
     <div class="signature">Nom du président</div>

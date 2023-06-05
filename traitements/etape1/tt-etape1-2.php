@@ -2,4 +2,17 @@
 
 $nomassociation = $_POST["nom-association"];
 
+var_dump($nomassociation);
+
+$filename = './../../documents/assemblee1.csv';
+
+$file = fopen($filename, 'a+');
+
+$texte = $nomassociation."\n";
+
+file_put_contents($filename, $texte, FILE_APPEND);
+
+fclose($file);
+
+
 header('Location: ./../../prive/etape1-3.php');
