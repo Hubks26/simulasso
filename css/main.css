@@ -5,6 +5,7 @@
 @import url('homepage-content.css');
 @import url('services.css');
 @import url('equipe.css');
+@import url('creation.css');
 
 body{
     font-size: 16px; /*definition de la taille de base*/

@@ -22,6 +22,5 @@ if (htmlspecialchars($_POST['contenu']) !== null) {
 
     $retour = mail($mail, 'Envoi depuis page Contact Simulasso', $message, $entete);
     if($retour)
-        echo '<p>Votre message a bien été envoyé.</p>';
+        echo "<p>Votre message a bien été envoyé. <br> <a href='./../index.php'>Retour à l'accueil</a></p>";
 }
-?>
