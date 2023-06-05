@@ -3,63 +3,40 @@ function genererCourrierConvocation() {
     // Créer un nouveau document jsPDF
     const doc = new jsPDF();
 
-    // Définir les styles de texte
-    const styles = {
-        enTete: { fontSize: 16, fontStyle: 'bold', align: 'center' },
-        titre: { fontSize: 14, fontStyle: 'bold', align: 'left', marginTop: 10 },
-        sousTitre: { fontSize: 12, fontStyle: 'bold', align: 'left', marginTop: 5 },
-        paragraphe: { fontSize: 12, fontStyle: 'normal', align: 'left', marginTop: 5 },
-        signature: { fontSize: 10, fontStyle: 'normal', align: 'right', marginTop: 20 },
-    };
-
-    // Fonction pour ajouter un paragraphe avec un style donné
-    function ajouterParagraphe(texte, style) {
-        doc.setFontSize(style.fontSize);
-        doc.setFontStyle(style.fontStyle);
-        doc.text(texte, 10, doc.autoTable.previous.finalY + style.marginTop, { align: style.align });
-    }
-
     // Texte d'en-tête
-    doc.setFontSize(styles.enTete.fontSize);
-    doc.setFontStyle(styles.enTete.fontStyle);
-    doc.text('Association XYZ', 105, 20, { align: 'center' });
+    doc.setFontSize(16);
+    doc.text('Association XYZ', 10, 10);
 
     // Informations de l'assemblée générale
-    doc.setFontSize(styles.titre.fontSize);
-    doc.setFontStyle(styles.titre.fontStyle);
-    doc.text('Convocation à l\'assemblée générale constitutive', 20, 40);
-
-    doc.setFontSize(styles.sousTitre.fontSize);
-    doc.setFontStyle(styles.sousTitre.fontStyle);
-    doc.text('Date: 5 juin 2023', 20, 50);
-    doc.text('Heure: 18h00', 20, 55);
-    doc.text('Lieu: Salle de réunion XYZ', 20, 60);
+    doc.setFontSize(12);
+    doc.text('Convocation à l\'assemblée générale constitutive', 10, 20);
+    doc.text('Date: 5 juin 2023', 10, 30);
+    doc.text('Heure: 18h00', 10, 40);
+    doc.text('Lieu: Salle de réunion XYZ', 10, 50);
 
     // Contenu du courrier
-    ajouterParagraphe('Chers membres de l\'association,', styles.paragraphe);
-    ajouterParagraphe('Nous vous convions à participer à l\'assemblée générale constitutive', styles.paragraphe);
-    ajouterParagraphe('de notre association qui se tiendra le 5 juin 2023 à 18h00', styles.paragraphe);
-    ajouterParagraphe('dans la salle de réunion XYZ.', styles.paragraphe);
+    doc.setFontSize(14);
+    doc.text('Chers membres de l\'association,', 10, 70);
+    doc.text('Nous vous convions à participer à l\'assemblée générale constitutive', 10, 80);
+    doc.text('de notre association qui se tiendra le 5 juin 2023 à 18h00', 10, 90);
+    doc.text('dans la salle de réunion XYZ.', 10, 100);
 
-    doc.setFontSize(styles.sousTitre.fontSize);
-    doc.setFontStyle(styles.sousTitre.fontStyle);
-    ajouterParagraphe('Ordre du jour:', styles.sousTitre);
+    doc.setFontSize(12);
+    doc.text('Ordre du jour:', 10, 120);
+    doc.setFontSize(10);
+    doc.text('1. Présentation du projet associatif', 10, 130);
+    doc.text('2. Adoption des statuts', 10, 140);
+    doc.text('3. Élection du bureau', 10, 150);
+    doc.text('4. Questions diverses', 10, 160);
 
-    doc.setFontSize(styles.paragraphe.fontSize);
-    doc.setFontStyle(styles.paragraphe.fontStyle);
-    ajouterParagraphe('1. Présentation du projet associatif', styles.paragraphe);
-    ajouterParagraphe('2. Adoption des statuts', styles.paragraphe);
-    ajouterParagraphe('3. Élection du bureau', styles.paragraphe);
-    ajouterParagraphe('4. Questions diverses', styles.paragraphe);
+    doc.setFontSize(12);
+    doc.text('Nous comptons sur votre présence et votre engagement', 10, 180);
+    doc.text('pour contribuer à la réussite de notre association.', 10, 190);
 
-    ajouterParagraphe('Nous comptons sur votre présence et votre engagement', styles.paragraphe);
-    ajouterParagraphe('pour contribuer à la réussite de notre association.', styles.paragraphe);
-
-    doc.setFontSize(styles.signature.fontSize);
-    doc.setFontStyle(styles.signature.fontStyle);
-    ajouterParagraphe('Cordialement,', styles.signature);
-    ajouterParagraphe('Le président de l\'association', styles.signature);
-    ajouterParagraphe('Nom du président', styles.signature);
+    doc.setFontSize(10);
+    doc.text('Cordialement,', 10, 210);
+    doc.text('Le président de l\'association', 10, 220);
+    doc.text('Nom du président', 10, 230);
 
     // Sauvegarder le document en tant que fichier PDF
     doc.save('convocation_assemblee_generale.pdf');
