@@ -41,3 +41,9 @@ function genererCourrierConvocation() {
     // Sauvegarder le document en tant que fichier PDF
     doc.save('convocation_assemblee_generale.pdf');
 }
+
+// Appeler la fonction pour générer le courrier de convocation
+genererCourrierConvocation();
+
+document.querySelector('.button').addEventListener('click', genererCourrierConvocation);
+
