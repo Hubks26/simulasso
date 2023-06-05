@@ -19,8 +19,8 @@ echo '
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
                 
-                    <a class="navbar-item" href="./../prive/info-creation.php">
-                        Ma création
+                    <a class="navbar-item" href="./../prive/mes-infos.php">
+                        Mes infos
                     </a>
                     
                     <a class="navbar-item" href="./../libre/services.php">

@@ -105,7 +105,11 @@ p{
 }
 
 a{
-    color: initial;
+    color: var(--bleu-fonce);
+}
+
+a:hover{
+    color: var(--bleu-clair);
 }
 
 .texte-bleu{
@@ -131,6 +135,10 @@ form{
 .hover-blanc:hover{
     color: var(--bleu-fonce);
     background-color: var(--blanc);
+}
+
+button{
+    cursor: pointer;
 }
 
 @media screen and (min-width: 64rem) {
