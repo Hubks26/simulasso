@@ -6,12 +6,10 @@
         <!-- obligatoire pour faire du responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="../javascript/menu.js"></script>
-        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js" integrity="sha512-1/8DJLhOONj7obS4tw+A/2yb/cK9w5vWP+L4liQKYX/JeLZ/cqDuZfgDha4NK/kR/6b5IzHpS7/w80v4ED+8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.js" integrity="sha512-yav6JBbr8Hh0W7fEItUPdp5Isu72RtXckkm1Erc7cdbMrfbwlrY1fbIZB2KKPIibr/cQJP6XpD4NuxWe9mXPvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="module" src="../javascript/test.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+        <script type="module" src="../javascript/generationCourrierAssembleeConstitutive.js"></script>
 
         <title>Etape 1-5 - Simul'asso</title>
 
