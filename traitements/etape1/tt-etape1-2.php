@@ -7,7 +7,7 @@ $filename = './../../documents/assemblee1.csv';
 
 $file = fopen($filename, 'a+');
 
-$texte = $nomassociation."\n";
+$texte = $nomassociation.",";
 
 file_put_contents($filename, $texte, FILE_APPEND);
 

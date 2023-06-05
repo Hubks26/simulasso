@@ -8,7 +8,7 @@ $filename = './../../documents/assemblee1.csv';
 
 $file = fopen($filename, 'a+');
 
-$texte = $dateassemblee ."\n".$heureassemblee."\n".$adresseassemblee."\n";
+$texte = $dateassemblee .",".$heureassemblee.",".$adresseassemblee.",";
 
 file_put_contents($filename, $texte, FILE_APPEND);
 

@@ -94,14 +94,14 @@ function genererCourrierConvocation() {
           <div class="title">Convocation à l'assemblée générale constitutive</div>
           <div class="greeting">Cher(e) membre de l'association,</div>
           <div class="body">
-            <div class="paragraphe">je vous convie à participer à l'assemblée générale constitutive
+            <div class="paragraphe">Nous vous convions à participer à l'assemblée générale constitutive
             de notre association qui se tiendra le `+ result.data[0][5] +`   à   `+ result.data[0][6] +` l'adresse suivante : `+ result.data[0][7] +`.</div><br><br>
             <div class="sous-titre">Ordre du jour:</div><br>
             <div class="paragraphe">1. Présentation du projet associatif</div>
             <div class="paragraphe">2. Adoption des statuts</div>
             <div class="paragraphe">3. Élection du bureau</div>
             <div class="paragraphe">4. Questions diverses</div><br>
-            <div class="paragraphe">Je compte sur votre présence et votre engagement
+            <div class="paragraphe">Nous comptons sur votre présence et votre engagement
             pour contribuer à la réussite de notre association.</div>
           </div>
           <div class="closing">Cordialement,</div>
@@ -120,7 +120,15 @@ function genererCourrierConvocation() {
 
             html2pdf().set(options).from(courrierHTML).save();
 
+
+
+
+
+
         })
+
+
+
 
 }
 

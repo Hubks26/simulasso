@@ -8,7 +8,7 @@ $filename = './../../documents/assemblee1.csv';
 
 $file = fopen($filename, 'a+');
 
-$texte = $nomdemandeur ."\n".$prenomdemandeur."\n".$adressedemandeur."\n";
+$texte = $nomdemandeur .",".$prenomdemandeur.",".$adressedemandeur.",";
 
 file_put_contents($filename, $texte, FILE_APPEND);
 
