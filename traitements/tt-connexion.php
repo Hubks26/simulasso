@@ -18,7 +18,6 @@ try {
             // Vérification du mot de passe
             if (password_verify($motDePasse, $utilisateur['mdp'])) {
                 // Mot de passe correct, l'utilisateur est connecté
-                echo "Connexion réussie!";
                 header('location:./../prive/mes-infos.php');
             } else {
                 $_SESSION['erreur'] = "Identifiants incorrects.";
