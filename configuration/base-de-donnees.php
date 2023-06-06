@@ -1,8 +1,8 @@
 <?php
 // Informations de connexion à la base de données
-$servername = "localhost"; // Nom du serveur MySQL
-$username = "root"; // Nom d'utilisateur MySQL
-$password = ""; // Mot de passe MySQL
+$servername = "servd162127.srv.odns.fr"; // Nom du serveur MySQL
+$username = "simulasso_alicia"; // Nom d'utilisateur MySQL
+$password = "Ao-xY_chiW*M"; // Mot de passe MySQL
 $dbname = "simulasso_global"; // Nom de la base de données
 
 // Créer une connexion à la base de données
