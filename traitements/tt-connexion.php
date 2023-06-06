@@ -2,6 +2,12 @@
 session_start(); // Démarrer la session
 require_once './../configuration/base-de-donnees.php';
 
+// Affichage du message d'erreur s'il existe
+if (isset($_SESSION['erreur'])) {
+    echo $_SESSION['erreur'];
+    unset($_SESSION['erreur']); // Suppression du message d'erreur de la variable de session
+}
+
 try {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Récupération des données du formulaire de connexion
