@@ -67,7 +67,7 @@ if (isset($_SESSION['erreur'])) {
             </h1>
         </section>
 
-        <form action="./../traitements/tt-connexion.php" method="post" class="box">
+        <form action="#" method="post" class="box">
             <div class="field">
                 <label class="label">Votre adresse mail</label>
                 <div class="control has-icons-left">

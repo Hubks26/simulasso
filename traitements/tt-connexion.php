@@ -18,7 +18,6 @@ function authentifierUtilisateur($mail, $motDePasse)
             // Vérification du mot de passe
             if (password_verify($motDePasse, $utilisateur['mdp'])) {
                 // Mot de passe correct, l'utilisateur est authentifié
-                echo "ok";
                 return true;
             } else {
                 // Mot de passe incorrect
