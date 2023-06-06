@@ -8,7 +8,7 @@ $dbname = "simulasso_global"; // Nom de la base de données
 
 try {
     // Création d'une nouvelle instance PDO
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
     // Configuration des options de PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

@@ -11,7 +11,7 @@ function authentifierUtilisateur($mail, $motDePasse)
     $stmt = $conn->prepare("SELECT * FROM Utilisateur WHERE email = :mail");
     $stmt->bindParam(':mail', $mail);
     $stmt->execute();
-    $utilisateur = $stmt->fetch();
+    $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($utilisateur) {
         // Vérification du mot de passe
