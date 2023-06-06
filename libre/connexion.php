@@ -6,10 +6,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $motDePasse = $_POST['mdp'];
 
     if (authentifierUtilisateur($mail, $motDePasse)) {
-        header('Location:./../prive/mes-infos.php');
+        header('Location: ./../prive/mes-infos.php');
     } else {
         echo "Mot de passe incorrect ou utilisateur non trouvé.";
     }
+}
+
+// Affichage du message d'erreur s'il existe
+if (isset($_SESSION['erreur'])) {
+    echo $_SESSION['erreur'];
+    unset($_SESSION['erreur']); // Suppression du message d'erreur de la variable de session
 }
 ?>
 

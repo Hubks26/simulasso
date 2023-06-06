@@ -22,16 +22,17 @@ function authentifierUtilisateur($mail, $motDePasse)
                 return true;
             } else {
                 // Mot de passe incorrect
-                echo "Mot de passe incorrect.";
+                $_SESSION['erreur'] = "Mot de passe incorrect.";
                 return false;
             }
         } else {
             // Utilisateur non trouvé
-            echo "Utilisateur non trouvé";
+            $_SESSION['erreur'] = "Utilisateur non trouvé.";
             return false;
         }
     } catch (PDOException $e) {
-        echo "Erreur de connexion à la base de données. <a href='./../index.php'>Revenir à l'accueil</a>";
+        $_SESSION['erreur'] = "Erreur de connexion à la base de données. <a href='./../index.php'>Revenir à l'accueil</a>";
         return false;
     }
 }
+
