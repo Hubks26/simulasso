@@ -8,7 +8,6 @@ try {
         $mail = $_POST['mail'];
         $motDePasse = $_POST['mdp'];
 
-        // Requête pour récupérer l'utilisateur correspondant à l'email fourni
         $stmt = $conn->prepare("SELECT * FROM Utilisateur WHERE mail = :mail");
         $stmt->bindParam(':mail', $mail);
         $stmt->execute();
