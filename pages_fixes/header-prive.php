@@ -39,7 +39,7 @@ echo '
                         Nous contacter
                     </a>
 
-                    <a class="navbar-item" href="./../libre/connexion.php">
+                    <a class="navbar-item" href="./../traitement/tt-deconnexion.php">
                         Déconnexion
                     </a>
                 </div>
