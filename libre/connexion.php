@@ -1,5 +1,23 @@
 <?php
-session_start(); // Démarrer la session
+require_once './../traitements/tt-connexion.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $mail = $_POST['mail'];
+    $motDePasse = $_POST['mdp'];
+
+    if (authentifierUtilisateur($mail, $motDePasse)) {
+        header('Location: ./../prive/mes-infos.php');
+        exit();
+    } else {
+        echo "Mot de passe incorrect ou utilisateur non trouvé.";
+    }
+}
+
+// Affichage du message d'erreur s'il existe
+if (isset($_SESSION['erreur'])) {
+    echo $_SESSION['erreur'];
+    unset($_SESSION['erreur']); // Suppression du message d'erreur de la variable de session
+}
 ?>
 
 <!doctype html>
@@ -49,7 +67,7 @@ session_start(); // Démarrer la session
             </h1>
         </section>
 
-        <form action="./../traitements/tt-connexion.php" method="post" class="box">
+        <form action="#" method="post" class="box">
             <div class="field">
                 <label class="label">Votre adresse mail</label>
                 <div class="control has-icons-left">
@@ -81,6 +99,14 @@ session_start(); // Démarrer la session
                 </div>
             </div>
         </form>
+
+        <?php
+        // Affichage du message d'erreur s'il existe
+        if (isset($_SESSION['erreur'])) {
+            echo $_SESSION['erreur'];
+            unset($_SESSION['erreur']); // Suppression du message d'erreur de la variable de session
+        }
+        ?>
     </main>
 
     <!-- FOOTER -->
