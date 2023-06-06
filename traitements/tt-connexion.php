@@ -1,4 +1,5 @@
 <?php
+session_start(); // Démarrer la session
 require_once './../configuration/base-de-donnees.php';
 
 try {
@@ -18,16 +19,19 @@ try {
             if (password_verify($motDePasse, $utilisateur['mdp'])) {
                 // Mot de passe correct, l'utilisateur est connecté
                 echo "Connexion réussie!";
-                // Autres actions après la connexion
+                header('location:./../prive/mes-infos.php');
             } else {
-                // Mot de passe incorrect
-                echo "Mot de passe incorrect.";
+                $_SESSION['erreur'] = "Identifiants incorrects.";
+                header("Location: login.php"); // Redirection vers la page de connexion
+                exit();
             }
         } else {
-            // Utilisateur non trouvé
-            echo "Email non trouvé.";
+            // Utilisateur non trouvé, stockage du message d'erreur dans une variable de session
+            $_SESSION['erreur'] = "Identifiants incorrects.";
+            header("Location: login.php"); // Redirection vers la page de connexion
+            exit();
         }
     }
 } catch (PDOException $e) {
-    echo "Erreur de connexion à la base de données: " . $e->getMessage();
+    echo "Erreur de connexion à la base de données: <a href='./../index.php'> Revenir à l'accueil </a>";
 }

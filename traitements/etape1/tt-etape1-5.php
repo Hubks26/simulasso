@@ -1,4 +1,5 @@
 <?php
+session_start(); // Démarrer la session
 
 $dateassemblee = $_POST["date-assemble-const"];
 $heureassemblee = $_POST["heure-assemble-const"];

@@ -1,3 +1,6 @@
+<?php
+session_start(); // Démarrer la session
+?>
 <!doctype html>
 <html lang="fr" dir="ltr" class="has-navbar-fixed-top">
     <head>

@@ -1,4 +1,5 @@
 <?php
+session_start(); // Démarrer la session
 
 $nomassociation = $_POST["nom-association"];
 

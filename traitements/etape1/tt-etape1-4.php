@@ -1,4 +1,5 @@
 <?php
+session_start(); // Démarrer la session
 
 $nomdemandeur = $_POST["nom-demandeur"];
 $prenomdemandeur = $_POST["prenom-demandeur"];

@@ -1,4 +1,5 @@
 <?php
+session_start(); // Démarrer la session
 
 if (htmlspecialchars($_POST['contenu']) !== null) {
     $contenu_message = htmlspecialchars($_POST['contenu']);

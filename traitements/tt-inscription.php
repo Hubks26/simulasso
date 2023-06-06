@@ -1,4 +1,5 @@
 <?php
+session_start(); // Démarrer la session
 
 require_once './../configuration/base-de-donnees.php';
 
