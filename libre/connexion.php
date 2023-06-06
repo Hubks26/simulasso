@@ -50,7 +50,7 @@
                 <label class="label">Votre adresse mail</label>
                 <div class="control has-icons-left">
                     <label>
-                        <input class="input" type="email" placeholder="Email">
+                        <input class="input" type="email" placeholder="Email" name="mail">
                     </label>
                     <span class="icon is-small is-left">
                               <i class="fas fa-envelope"></i>
@@ -62,7 +62,7 @@
                 <label class="label">Mot de passe</label>
                 <div class="control has-icons-left">
                     <label>
-                        <input class="input" type="password" placeholder="Mot de passe">
+                        <input class="input" type="password" placeholder="Mot de passe" name="mdp">
                     </label>
                     <span class="icon is-small is-left">
                               <i class="fas fa-lock"></i>
