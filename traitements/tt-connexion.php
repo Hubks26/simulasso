@@ -23,13 +23,10 @@ function authentifierUtilisateur($mail, $motDePasse)
             setcookie('session', $sessionId, time() + 60 * 60 * 24, "", "", false, true);
             return true;
         } else {
-            // Mot de passe incorrect
-            $_SESSION['erreur'] = "Mot de passe incorrect.";
-            return false;
+            // Utilisateur non trouvé, stockage du message d'erreur dans une variable de session
+            $_SESSION['erreur'] = "Identifiants incorrects.";
+            header("Location: ./../libre/connexion.php"); // Redirection vers la page de connexion
+            exit();
         }
-    } else {
-        // Utilisateur non trouvé
-        $_SESSION['erreur'] = "Utilisateur non trouvé.";
-        return false;
     }
 }

@@ -30,7 +30,7 @@ try {
 
     header('Location:./../prive/info-creation.php');
 }catch (PDOException $e) {
-    echo "Erreur d'enregistrement: " . $e->getMessage();
+    echo "Erreur d'enregistrement... <a href='./../libre/inscription.php'>Retour à la page d'inscription</a>";
 }
 
 
