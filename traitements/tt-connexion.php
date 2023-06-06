@@ -22,13 +22,13 @@ try {
                 header('location:./../prive/mes-infos.php');
             } else {
                 $_SESSION['erreur'] = "Identifiants incorrects.";
-                header("Location: login.php"); // Redirection vers la page de connexion
+                header("Location: ./../libre/connexion.php"); // Redirection vers la page de connexion
                 exit();
             }
         } else {
             // Utilisateur non trouvé, stockage du message d'erreur dans une variable de session
             $_SESSION['erreur'] = "Identifiants incorrects.";
-            header("Location: login.php"); // Redirection vers la page de connexion
+            header("Location: ./../libre/connexion.php"); // Redirection vers la page de connexion
             exit();
         }
     }
