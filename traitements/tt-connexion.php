@@ -1,10 +1,11 @@
 <?php
 session_start(); // Démarrer la session
 
+require_once './../configuration/base-de-donnees.php';
+
 function authentifierUtilisateur($mail, $motDePasse)
 {
     global $conn;
-    $pdo = require_once './../configuration/base-de-donnees.php';
 
     // Requête pour récupérer l'utilisateur correspondant à l'email fourni
     $stmt = $conn->prepare("SELECT * FROM Utilisateur WHERE email = :mail");
@@ -16,17 +17,15 @@ function authentifierUtilisateur($mail, $motDePasse)
         // Vérification du mot de passe
         if (password_verify($motDePasse, $utilisateur['mdp'])) {
             // Mot de passe correct, l'utilisateur est authentifié
-            $statementSession = $pdo->prepare('INSERT INTO session VALUES ( DEFAULT, :userid )');
-            $statementSession->bindValue(':userid', $utilisateur['id']);
-            $statementSession->execute();
-            $sessionId = $pdo->lastInsertId();
-            setcookie('session', $sessionId, time() + 60 * 60 * 24, "", "", false, true);
             return true;
         } else {
-            // Utilisateur non trouvé, stockage du message d'erreur dans une variable de session
-            $_SESSION['erreur'] = "Identifiants incorrects.";
-            header("Location: ./../libre/connexion.php"); // Redirection vers la page de connexion
-            exit();
+            // Mot de passe incorrect
+            $_SESSION['erreur'] = "Mot de passe incorrect.";
+            return false;
         }
+    } else {
+        // Utilisateur non trouvé
+        $_SESSION['erreur'] = "Utilisateur non trouvé.";
+        return false;
     }
 }
