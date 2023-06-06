@@ -1,5 +1,16 @@
 <?php
-session_start(); // Démarrer la session
+require_once './../traitements/tt-connexion.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $mail = $_POST['mail'];
+    $motDePasse = $_POST['mdp'];
+
+    if (authentifierUtilisateur($mail, $motDePasse)) {
+        header('Location:./../prive/mes-infos.php');
+    } else {
+        echo "Mot de passe incorrect ou utilisateur non trouvé.";
+    }
+}
 ?>
 
 <!doctype html>
