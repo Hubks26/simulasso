@@ -25,6 +25,20 @@
         après les autres et on veut que ce soit notre feuille qui prime -->
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script src="./../javascript/validation-conditions.js"></script>
+        <script>
+            function validatePasswords() {
+                let mdp = document.getElementById("mdp").value;
+                let mdp2 = document.getElementById("mdp2").value;
+
+                if (mdp !== mdp2) {
+                    alert("Les mots de passe ne correspondent pas !");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+
 
     </head>
 
@@ -47,7 +61,7 @@
             </h1>
         </section>
 
-        <form action="./../traitements/tt-inscription.php" method="post" class="box">
+        <form action="./../traitements/tt-inscription.php" method="post" class="box" onsubmit="return validatePasswords()">
             <div class="field">
                 <label class="label">Votre nom</label>
                 <div class="control">
@@ -82,7 +96,7 @@
                 <label class="label">Mot de passe</label>
                 <div class="control has-icons-right">
                     <label>
-                        <input class="input" type="password" placeholder="Mot de passe" name="mdp" required>
+                        <input class="input" type="password" placeholder="Mot de passe" name="mdp" id="mdp" required>
                     </label>
                 </div>
             </div>
@@ -91,7 +105,7 @@
                 <label class="label">Confirmer le mot de passe</label>
                 <div class="control has-icons-right">
                     <label>
-                        <input class="input" type="password" placeholder="Confirmer le mot de passe" required></input>
+                        <input class="input" type="password" placeholder="Confirmer le mot de passe" id="mdp2" required></input>
                     </label>
                 </div>
             </div>
