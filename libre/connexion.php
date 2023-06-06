@@ -7,6 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (authentifierUtilisateur($mail, $motDePasse)) {
         header('Location: ./../prive/mes-infos.php');
+        exit();
     } else {
         echo "Mot de passe incorrect ou utilisateur non trouvé.";
     }
@@ -98,6 +99,15 @@ if (isset($_SESSION['erreur'])) {
                 </div>
             </div>
         </form>
+
+        <?php
+        // Affichage du message d'erreur s'il existe
+        if (isset($_SESSION['erreur'])) {
+            echo $_SESSION['erreur'];
+            unset($_SESSION['erreur']); // Suppression du message d'erreur de la variable de session
+        }
+        ?>
+        ?>
     </main>
 
     <!-- FOOTER -->
