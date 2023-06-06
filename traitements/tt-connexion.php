@@ -18,13 +18,16 @@ function authentifierUtilisateur($mail, $motDePasse)
             // Vérification du mot de passe
             if (password_verify($motDePasse, $utilisateur['mdp'])) {
                 // Mot de passe correct, l'utilisateur est authentifié
+                echo "ok";
                 return true;
             } else {
                 // Mot de passe incorrect
+                echo "Mot de passe incorrect.";
                 return false;
             }
         } else {
             // Utilisateur non trouvé
+            echo "Utilisateur non trouvé";
             return false;
         }
     } catch (PDOException $e) {
