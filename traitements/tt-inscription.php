@@ -12,7 +12,7 @@ try {
 
     // Préparation de la requête d'insertion
     $stmt = $conn->prepare("
-    INSERT INTO Utilisateurs (nom, prenom, mail, mdp, alsace) 
+    INSERT INTO Utilisateur (nom, prenom, mail, mdp, alsace) 
     VALUES (:nom, :prenom, :mail, :mdp, :bool)");
 
     // Liaison des paramètres avec les valeurs
@@ -25,7 +25,7 @@ try {
     // Exécution de la requête
     $stmt->execute();
 
-    echo "Enregistrement réussi!";
+    header('Location:./../prive/info-creation.php');
 }catch (PDOException $e) {
     echo "Erreur d'enregistrement: " . $e->getMessage();
 }
