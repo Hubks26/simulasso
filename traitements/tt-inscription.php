@@ -10,6 +10,8 @@ try {
     $motDePasse = $_POST['mdp'];
     $alsace = 0;
 
+    $motDePasseCrypte = password_hash($motDePasse, PASSWORD_DEFAULT);
+
     // Préparation de la requête d'insertion
     $stmt = $conn->prepare("
     INSERT INTO Utilisateur (nom, prenom, mail, mdp, alsace) 
@@ -19,7 +21,7 @@ try {
     $stmt->bindParam(':nom', $nom);
     $stmt->bindParam(':prenom', $prenom);
     $stmt->bindParam(':mail', $mail);
-    $stmt->bindParam(':mdp', $motDePasse);
+    $stmt->bindParam(':mdp', $motDePasseCrypte);
     $stmt->bindParam(':bool', $alsace);
 
     // Exécution de la requête
