@@ -107,7 +107,6 @@ if (isset($_SESSION['erreur'])) {
             unset($_SESSION['erreur']); // Suppression du message d'erreur de la variable de session
         }
         ?>
-        ?>
     </main>
 
     <!-- FOOTER -->

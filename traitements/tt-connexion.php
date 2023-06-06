@@ -7,30 +7,25 @@ function authentifierUtilisateur($mail, $motDePasse)
 {
     global $conn;
 
-    try {
-        // Requête pour récupérer l'utilisateur correspondant à l'email fourni
-        $stmt = $conn->prepare("SELECT * FROM Utilisateur WHERE email = :mail");
-        $stmt->bindParam(':mail', $mail);
-        $stmt->execute();
-        $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
+    // Requête pour récupérer l'utilisateur correspondant à l'email fourni
+    $stmt = $conn->prepare("SELECT * FROM Utilisateur WHERE email = :mail");
+    $stmt->bindParam(':mail', $mail);
+    $stmt->execute();
+    $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($utilisateur) {
-            // Vérification du mot de passe
-            if (password_verify($motDePasse, $utilisateur['mdp'])) {
-                // Mot de passe correct, l'utilisateur est authentifié
-                return true;
-            } else {
-                // Mot de passe incorrect
-                $_SESSION['erreur'] = "Mot de passe incorrect.";
-                return false;
-            }
+    if ($utilisateur) {
+        // Vérification du mot de passe
+        if (password_verify($motDePasse, $utilisateur['mdp'])) {
+            // Mot de passe correct, l'utilisateur est authentifié
+            return true;
         } else {
-            // Utilisateur non trouvé
-            $_SESSION['erreur'] = "Utilisateur non trouvé.";
+            // Mot de passe incorrect
+            $_SESSION['erreur'] = "Mot de passe incorrect.";
             return false;
         }
-    } catch (PDOException $e) {
-        $_SESSION['erreur'] = "Erreur de connexion à la base de données. <a href='./../index.php'>Revenir à l'accueil</a>";
+    } else {
+        // Utilisateur non trouvé
+        $_SESSION['erreur'] = "Utilisateur non trouvé.";
         return false;
     }
 }
