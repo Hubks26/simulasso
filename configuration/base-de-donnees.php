@@ -13,9 +13,8 @@ try {
     // Configuration des options de PDO
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    echo "Connexion à la base de données réussie!";
 } catch (PDOException $e) {
-    echo "Erreur de connexion à la base de données: " . $e->getMessage();
+    echo "Erreur de connexion à la base de données: <a href='./../index.php'> Revenir à l'accueil </a>";
 }
 
 
